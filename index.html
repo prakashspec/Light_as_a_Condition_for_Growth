@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=924, height=630"/>
+
+<title>Light as a Condition for Plant Growth!</title>
+<link href="assets/css/font.css" rel="stylesheet"/>
+<link href="assets/css/template.css" rel="stylesheet"/>
+<link href="assets/css/actstyle.css" rel="stylesheet"/>
+<link href="assets/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet"/> 
+
+
+<script src="assets/js/jquery-2.0.0.min.js"></script>
+<script src="assets/js/rotate.js"></script>
+<script src="assets/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="assets/js/html2canvas_0.4.1.js"></script>
+<script src="assets/js/data.js"></script>
+
+<script src="assets/js/script.js"></script>
+<script src="assets/js/eventjs.js"></script>
+<script src="assets/js/activity.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/jquery.preload.js"></script>
+
+<script>
+	$(function(){
+		var imgs = [
+			
+			'assets/images/activity/bg.png',
+			'assets/images/activity/bg1.png',
+			'assets/images/activity/img_0.png',
+			'assets/images/activity/img_1.png',
+			'assets/images/activity/img_2.png',
+			'assets/images/activity/blue.png',
+			'assets/images/activity/colorbar.png',
+			'assets/images/activity/cucumber.png',
+			'assets/images/activity/cucumbergrid.png',
+			'assets/images/activity/cucumbermedium.png',
+			'assets/images/activity/cucumbermediumframe.png',
+			'assets/images/activity/cucumberpotseeds.png',
+			'assets/images/activity/cucumberseed.png',
+			'assets/images/activity/cucumberseeds.png',
+			'assets/images/activity/cucumbersmall.png',
+			'assets/images/activity/cucumbersmallframe.png',
+			'assets/images/activity/cucumbertall.png',
+			'assets/images/activity/cucumbertallframe.png',
+			'assets/images/activity/green.png',
+			'assets/images/activity/grow.png',
+			'assets/images/activity/indigo.png',
+			'assets/images/activity/lettuce.png',
+			'assets/images/activity/lettucemedium.png',
+			'assets/images/activity/lettucemediumframe.png',
+			'assets/images/activity/lettucepotseeds.png',
+			'assets/images/activity/lettuceseed.png',
+			'assets/images/activity/lettuceseeds.png',
+			'assets/images/activity/lettucesmall.png',
+			'assets/images/activity/lettucesmallframe.png',					
+			'assets/images/activity/lettucetall.png',
+			'assets/images/activity/lettucetallframe.png',						
+			'assets/images/activity/light.png',
+			'assets/images/activity/line.png',
+			'assets/images/activity/orange.png',
+			'assets/images/activity/plant.png',
+			'assets/images/activity/pot.png',
+			'assets/images/activity/red.png',
+			'assets/images/activity/tomato.png',
+			'assets/images/activity/tomatomedium.png',
+			'assets/images/activity/tomatomediumframe.png',
+			'assets/images/activity/tomatoseed.png',
+			'assets/images/activity/tomatosmall.png',
+			'assets/images/activity/tomatosmallframe.png',
+			'assets/images/activity/tomatotall.png',
+			'assets/images/activity/tomatotallframe.png',
+			'assets/images/activity/tomattopotseeds.png',
+			'assets/images/activity/tomattoseeds.png',
+			'assets/images/activity/violet.png',
+			'assets/images/activity/yellow.png',
+			'assets/images/help/audio_icon.png',
+			'assets/images/help/camera_icon.png',
+			'assets/images/help/info_icon.png',
+			'assets/images/template/audio_icon_normal.png',
+			'assets/images/template/audio_icon_play.png',
+			'assets/images/template/camera_icon.png',
+			'assets/images/template/camera_icon_disabled.png',
+			'assets/images/template/close.png',
+			'assets/images/template/info_icon.png',
+			'assets/images/template/left_slider_act.png',
+			'assets/images/template/left_slider_deact.png',
+			'assets/images/template/lslider.png',
+			'assets/images/template/ok_btn.png',
+			'assets/images/template/ok_btn_active.png',
+			'assets/images/template/ok_btn_clkd.png',
+			'assets/images/template/reset-01.png',
+			'assets/images/template/right_slider_act.png',
+			'assets/images/template/right_slider_deact.png',
+			'assets/images/template/rslider.png'
+		];		
+		$.preload(imgs, {
+		    each: function (count) {
+		    },
+		    all: function () {
+			   var Mytimeout= setTimeout(function(){
+					console.clear();
+					clearTimeout(Mytimeout);
+				},500);
+		    }
+		});
+	});
+</script>
+</head>
+
+<body>
+<div class="container">
+ 	<div class="header" >
+    	<span class="activity_title"></span>
+		<span class="infoIcon"></span>
+        <span id="rtxt_1" name="welcome" class="rtxt welcome">Welcome</span>
+        <span id="rtxt_2" name="explore" class="rtxt explore">Explore</span>
+        <span id="rtxt_3" name="activity" class="rtxt activity">Activity</span>
+    </div>
+	<img src="assets/images/step_0.png" width="924px" height="588px" class="workAreaBg"/>
+	<img class="preloaderImg" src="assets/images/preloader2.gif" style="position:absolute;left:0;top:0; right:0; bottom:0; margin:auto;"/>
+	<div class="screenArea" audio-mode="off" style="display:none">	
+
+		<div class="sliderContain"></div>	
+		<!-- <div class="EventNotAllowed"></div>		
+				Welcome Page -->
+		<div id="welcome" class="workArea">
+			<iframe src="assets/edge/index.html" id="myFrame" width="924" height="588" scroll="no" style="border:none"></iframe>
+			<!-- <div id="Stage" class="EDGE-1817669">
+			</div> -->
+		</div>
+		<div class="bubbleDiv"></div>
+		
+		<!--Audio Div -->
+		<div class="expDiv">
+		
+			<div class="headerDrag"><div>&equiv;</div></div>
+			 <div class="expimgcont" id="expimgcont" style="display: block;">
+				<img width="180px" draggable="false" style="border-radius:12px;" src="assets/images/activity/test.png">
+			</div> 
+			<img src="assets/images/template/audio_icon_normal.png" alt="audioButton" class="expDivIcon expAudio" audio-state="pause" style="top: 152px;"/>
+				<p class="expPara" style="top: 140px;">
+					Test...
+				</p>
+			<img src="assets/images/template/lslider.png" id="arrow"  class="activeSlider" alt="Slide Animation" />
+			<div class="expFoodBar">
+				<div class="moveNextFood" data-attend="0"></div>
+				<!-- <div class="arrowbtn" id='navarrow'>></div> -->
+				<!-- <div class="txtOk" id='ok'>OK</div> -->
+				<div class="PreBtnSlider navSliderBtn" data-attend="0"></div>
+				<div class="nxtBtnSlider navSliderBtn" data-attend="0"></div>
+			</div>
+		</div>
+		
+		
+		
+		
+<div id="explore" class="workArea" data-class="explore">		
+	<div class="images"></div>		
+	<div class="plantGrowth" id="growthSideleft">	
+		<div class="colorDiv colorDivL" id="colorDivL"></div>
+		<div class="light" ></div>		
+		<div class="lightValuesleft">Green</div>		
+		<div class="colorDisplay" id="colorDisplay_0"></div>
+		<div class="bucket" id="bucketL"  ></div>
+		<div class="bucket1" id="bucketL" ></div>
+		<div class="seedAnim"></div>
+		<div class="plantAnim" id="plantAnim1"></div>
+		<div class="grid" id="grid1"></div>		
+		<div class="plantAnimframe" id="plantAnimframe1"></div>
+	</div>	
+	<div class="centerdiv"></div>
+	<div class="plantGrowth" id="growthSideright">
+		<div class="colorDiv" id="colorDivR"></div>
+		<div class="light" ></div>
+		<div class="lightValuesRight">Green</div>
+		<div class="colorDisplay" id="colorDisplay_1"></div>
+		<div class="bucket" id="bucketR" ></div>
+		<div class="bucket1" id="bucketR" ></div>
+		<div class="seedAnim"></div>
+		<div class="grid" id="grid1"></div>		
+		<div class="plantAnim" id="plantAnim2"></div>
+		<div class="plantAnimframe" id="plantAnimframe2" ></div>
+	</div>	
+	<!-- <div class="resetFun dummyreset"><span>Reset</span></div>
+	<div  class="growClick dummygrow"><span>GROW</span></div> -->
+	<div class="grow" style="opacity:1; display:block;" >
+		<div  class="growClick"><span>Grow</span>
+			<div class="arrow-right"></div>
+		
+		</div>
+			<div class="dummytop"></div>
+			<div class="dummytop1"></div>
+		<div class="outer">
+			<div class="inner" id="growInner"></div>
+		</div>		
+		<div class="growtop" style="position:absolute; background:#fff; opacity:0.5; width:107%; height:180%; left:0; top:0; z-index:0;"></div> 
+	</div>  
+	<div class="numOfDays" id="numOfDays"></div>
+	<div class="days">Days</div>
+	<div class="resetFun"><span>Reset</span></div>	
+		
+		<div class="tall plantHeight">
+		<span class="l1">High</span>
+		<div class="tallSpan" ></div>
+		<span class="r1">High</span>
+	</div>
+	<div class="medium plantHeight">
+		<span class="l2">Medium</span>
+		<div class="tallSpan" id="medSpan" ></div>
+		<span class="r2">Medium</span>
+	</div>			
+	<div class="short plantHeight">
+		<span class="l3">Low</span>
+		<div class="tallSpan" id="shortSpan"></div>
+		<span class="r3">Low</span>
+	</div>
+</div>
+		
+<div id="activity" class="workArea" data-class="activity" style="display:none">		
+	<div class="tall plantHeight">
+		<span class="l1">High</span>
+		<div class="tallSpan" ></div>
+		<span class="r1">High</span>
+	</div>
+	<div class="medium plantHeight">
+		<span class="l2">Medium</span>
+		<div class="tallSpan" id="medSpan"></div>
+		<span class="r2">Medium</span>
+	</div>			
+	<div class="short plantHeight">
+		<span class="l3">Low</span>
+		<div class="tallSpan" id="shortSpan"></div>
+		<span class="r3">Low</span>
+	</div>
+	<div class="dummydiv"></div>
+	<div id ="aActImages" class="actImages">
+	
+	</div>
+		<div class="glowEffect glow4" style="display: block;"></div>
+	<div class="centerdiv"></div>
+	<div class="actplantGrowth" id="actgrowthSideleft">				
+		<div class="highlight highlightcmn" id="highlightLeft"></div>
+		<div class="actcolorDiv" id="actcolorDivL"></div>
+		<div class="commondummy" id="dummycolorL"></div> 
+		<!--<div class="commondummy" id="dummylightL"></div>
+		<div class="commondummy" id="dummybucketL"></div> -->
+		<div class="actlight"></div>
+		<div class="actlightValuesleft">Green</div>
+		<div class="actcolorDisplay" id="actcolorDisplay_0"></div>		
+		<div class="actbucket" id="actbucketL"></div>
+		<div class="actbucket1" id="actbucketL" ></div>
+		<div class="actseedAnim"></div>
+		<div class="actplantAnim" id="actplantAnim1"></div>
+	</div>	
+
+	<div class="actplantGrowth" id="actgrowthSideright">			
+		<div class="highlight highlightcmn" id="highlightRight"></div>
+		<div class="actcolorDiv" id="actcolorDivR">	</div>				
+		<div class="commondummy" id="dummycolorR"></div><!-- 
+		<div class="commondummy" id="dummylightR"></div>
+		<div class="commondummy" id="dummybucketR"></div> -->
+		<div class="actlight"></div>
+		<div class="actlightValuesRight">Green</div>
+		<div class="actcolorDisplay" id="actcolorDisplay_1"></div>				
+		<div class="actbucket" id="actbucketR" ></div>
+		<div class="actbucket1" id="actbucketR" ></div>
+		<div class="actseedAnim"></div>
+		<div class="actplantAnim" id="actplantAnim2"></div>
+	</div>	
+	<!-- <div class="actresetFun dummyreset"><span>Reset</span></div>
+	<div  class="actgrowClick dummygrow"><span>GROW</span></div> -->
+	<div class="leftside"></div>
+	<div class="rightsside"></div>
+	<div class="actgrow" >				
+		<div class="highlight" id="highlightgrow"></div>
+		<div class="commondummy" id="dummygrowL"></div>
+		<div  class="actgrowClick"><span>Grow</span>
+			<div class="arrow-right"></div>
+		</div>
+		<div class="dummytop"></div>
+		<div class="dummytop1"></div>
+		<div class="actouter">
+			<div class="actinner" id="actgrowInner"></div>
+		</div>
+		
+	</div>  
+	<div class="actnumOfDays" id="actnumOfDays"></div>
+	<div class="days">Days</div>
+    
+	<div class="actresetFun"><span class="actresetFun1">Reset</span></div>
+</div>   
+   
+
+<!--Help window -->
+<div class="helpwindow">
+	<div class="helpinner">
+		<div class="helpBlockTopWhite" style="z-index: 9;height:10px;width:554px;position:absolute;background:white;top:153px"></div>
+			<div class="help1" data-class="lclass">Background Information</div>
+			<div class="help2" data-class="rclass">Help</div>
+			<div class="helpBlock1"></div>
+			<div class="helpBlock2"></div>
+			<img src="assets/images/template/close.png" alt="closeButton" class="closeIcon"/>
+		<div class="helpBlockBotWhite" style="z-index: 9;height:10px;width:554px;position:absolute;background:white;bottom:105px"></div>
+	</div>
+</div>	
+		
+</div>
+<!-- 	<img src="assets/images/template/camera_icon.png" alt="screenCapture" class="screenIcon" style=""/>	 -->
+<div  alt="screenCapture" class="screenIcon" style=""></div>	
+ 
+</div>
+</body>
+</html>
+

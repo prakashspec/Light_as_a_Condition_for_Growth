@@ -1,0 +1,600 @@
+body {
+    font-family: Roboto-regular;
+} 
+.workArea
+{
+background: white;
+}
+.welimages,.welactImages
+{
+	position: absolute;
+	top: 11px;
+	left: 212px;
+	width: 487px;
+	height: 93px;
+	z-index:2;
+}
+.highlight {
+	
+	background: transparent;
+	border-radius: 42px;
+	border: 3px solid yellow;
+	box-shadow: 0px 0px 27px #FFEB3B;
+	display: none;
+	z-index:-1;
+	-webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.plantHeight {
+    font-size: 13px;
+	}
+ @media screen and (-webkit-min-device-pixel-ratio:0) { 
+  
+    .glowEffect , .highlight{
+     -webkit-animation-name: blinker1;
+     animation-name: blinker1;
+    }
+
+   
+    ::i-block-chrome,.myClass, .highlight{
+      -webkit-animation-name: blinker;
+      animation-name: blinker;
+    }
+}
+.welplantImage,.welclickClass,.welclickClassAct,.plantImageAct,.highlight,.commondummy
+{
+	position:absolute;
+	width: 132px;
+	height: 95px;
+	top: -4px;
+	cursor:pointer;
+}
+.welplantImage span,.welplantImageAct span
+{
+	position:absolute;
+	width: 132px;
+	height: 20px;
+	text-align: center;
+	top: 79px;
+	left: 0px;
+	font-size: 13px;
+}.welclickClass,.welclickClassAct	
+{
+	display:none;
+}
+#welplant_0,#welplantImageAct_0
+{
+	
+	left: 0px;
+}#welplant_1,#welplantImageAct_1
+{
+	left: 174px;
+	
+}
+#welplant_2,#welplantImageAct_2
+{
+	left: 352px;	
+}#welclickClass_0,#welclickClassAct_0,#highlight0,#dummy0
+{
+
+	left: 0px;	
+}
+#welclickClass_1,#welclickClassAct_1,#highlight1,#dummy1
+{
+	left: 174px;
+}
+#welclickClass_2,#welclickClassAct_2,#highlight2,#dummy2
+{
+	left: 352px;	
+}
+#Stage_anim_div,#Stage_anim_div2{
+	z-index:1;
+}
+ #highlight1
+{
+	top: -5px;
+	left: 174px;
+	border-radius: 20px;
+	width: 133px;
+	height: 97px;
+}
+.welcolorDiv,.welactcolorDiv
+{
+	position:absolute;
+	top: 10px;
+	left: 15px;
+	width: 274px;
+	height:24px;
+}
+#highlightLeft,#highlightRight
+{
+	top: 12px;
+	left: 15px;
+	width: 270px;
+	height: 15px;
+	position:absolute;
+}
+.welcolorsVal,.welcolorsVal
+{
+	position:absolute;
+	top:6px;height:14px;
+	cursor:pointer;
+}
+#welslider0,#welslider1
+{
+	position:absolute;
+	top:0px;
+	left:133px;
+	width:11px;
+	height:25px;
+	cursor:pointer;	
+    background-image:url('../../assets/images/activity/colorbar.png');
+}
+.welcolorDisplay,.welactcolorDisplay
+{
+	position:absolute;
+	left: 33px;
+	top: 66px;
+	width: 241px;
+	height: 173px;
+	z-index:7;
+
+}
+.bucket,.actbucket
+{
+	position:absolute;
+	top: 250px;
+	height: 130px;
+	width: 120px;
+	left: 88px;
+    background-image:url('../../assets/images/activity/pot.png');
+	background-size:100% 100%;
+	z-index: 3;
+	
+}
+.bucket1,.actbucket1
+{
+
+	position:absolute;
+	top: 250px;
+	height: 40px;
+	width: 80px;
+	left: 110px;
+	background-size:100% 100%;
+	z-index: 3;
+}
+
+
+.light,.actlight
+{
+	position:absolute;
+	top: 40px;
+	height: 45px;
+	width: 269px;
+	left: 19px;
+    background-image:url('../../assets/images/activity/light.png');
+	background-size:100% 100%;
+	z-index: 1;
+}
+
+.plantGrowth,.actplantGrowth
+{
+	position:absolute;
+	top:103px;
+	height:395px;
+	width:300px;
+	left: 152px;
+	z-index: 1;
+}
+#growthSideright,#actgrowthSideright
+{
+	left: 465px;
+}
+
+.welclickClass,.welclickClassAct
+{
+	border: 3px solid #FFCB05;
+    border-radius: 10px;
+    opacity: 1 !important;
+    z-index: -1;
+}
+.welgrow,.actgrow
+{
+	position:absolute;
+	top: 494px;
+	left: 118px;
+	width: 687px;
+	height: 20px;
+	opacity:0.5;
+	z-index:3;
+}
+.growClick,.actgrowClick
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 70px;
+    height: 36px;
+    background: #1E6E37;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+.triangle_right { width: 0 !important; height: 0 !important; border-top: 10px solid transparent; border-left: 10px solid red; border-bottom:10px solid transparent; }
+.growClick span,.actgrowClick span
+{
+    top: 6px;
+    position: absolute;
+    text-align: center;
+    height: 17px;
+    left: 22px;
+	
+}
+.welarrow-right {
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 20px solid #1E6E37;
+    position: absolute;
+    top: 494px;
+    left: 188px;
+    z-index: 120;
+}
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 18px solid transparent;
+	border-bottom: 18px solid transparent;
+	border-left: 20px solid #1E6E37;
+	position: absolute;
+	top: 0px;
+	left: 70px;
+}
+.outer,.actouter
+{
+    position: absolute;
+    background: #57585B;
+    left: 78px;
+    width: 657px;
+    height: 21px;
+    z-index: 1;
+    top: 7px;
+}
+.inner,.actinner
+{
+	position:absolute;
+	top: 6px;
+	left: 0px;
+	width: 0px;
+	height: 9px;
+	background:#ACD96C;
+	z-index:1;
+}
+.newclass
+{
+width:0px !important;
+
+}
+.seedAnim,.actseedAnim
+{
+	position:absolute;
+    top: 114px;
+    left: 120px;
+	width: 140px;
+	height: 170px;
+	z-index: 10;
+	
+	display:none;
+}
+.welplantAnim,.welactplantAnim,.welplantAnimframe
+{
+	position:absolute;	
+	left: 79px;
+	display:none;
+	z-index:6;
+	bottom: 119px;
+}
+.grid
+{
+	width:150px;
+	height:180px;
+	position:absolute;	
+	left: 78px;
+	top: 93px;
+	z-index:3;
+	display:none;
+    background-image:url('../../assets/images/activity/cucumbergrid.png');
+}
+
+.welresetFun
+{
+	
+    color: white;
+    position: absolute;
+    width: 70px;
+    height: 36px;
+    top: 494px;
+    left: 26px;
+    text-align: center;
+    line-height: 35px;
+    z-index: 7;
+	background: #a7a9ab;
+}
+.numOfDays,.actnumOfDays
+{
+    width: 652px;
+    height: 20px;
+    position: relative;
+    top: 487px;
+    left: 203px;
+    color: #57585B;
+	z-index:1;
+}
+
+.flexClass {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color:#57585B; 
+  margin-top: 37px;
+  margin-left: -30px;
+  width: 712px;
+  
+}
+
+ .tall
+{
+	position:absolute;
+	top: 118px;
+	left: 464px;
+	width:350px;
+	display: inline-block;
+}
+.short
+	{
+	top: 215px;
+	left: 465px;
+	width: 360px;
+	position:absolute;
+
+	display: inline-block;
+}
+ .medium
+{
+	position: absolute;
+	top: 168px;
+	left: 465px;
+	width: 380px;
+	display: inline-block;
+}
+.l1
+{
+position: absolute;
+right: 670px;
+top: 2px;
+
+}.l2
+{
+
+position: absolute;
+right: 702px;
+top: 2px;
+}.l3
+{
+position: absolute;
+right: 682px;
+top: 2px;
+}.r1
+{
+position: absolute;
+left: 324px;
+top: 2px;
+}.r2
+{
+position: absolute;
+left: 323px;
+top: 2px;
+
+}.r3
+{
+position: absolute;
+left: 323px;
+top: 2px;
+}
+.tallSpan
+	{
+	position: absolute;
+	top: 12px;
+	right: 31px;
+	width: 635px;
+	height:2px;
+	z-index:5;
+	background:url('../../assets/images/activity/line.png');
+
+}
+#medSpan
+{
+right: 61px;
+top: 12px;
+}#shortSpan
+{
+
+right: 42px;
+}
+.commondummy
+{
+position:absolute;
+opacity:0.5;
+z-index:3;
+}
+#highlightgrow
+{
+width: 64px;
+height: 17px;
+top: -3px;
+left: -6px;
+}
+#dummycolorR,
+#dummycolorL
+{
+top: 14px;
+left: 18px;
+width: 271px;
+height: 18px;
+
+}
+#dummylightR,
+#dummylightL
+{
+top: 41px;
+left: 18px;
+width: 271px;
+height: 43px;
+border-bottom-left-radius: 50px;
+border-bottom-right-radius: 50px;
+
+}
+#dummybucketR,
+#dummybucketL
+{
+    top: 261px;
+    left: 92px;
+    width: 111px;
+height: 121px;
+border-bottom-left-radius: 50%;
+border-bottom-right-radius: 50%;
+
+}
+#dummygrowL
+{
+
+width: 687px;
+height: 19px;
+    top: 1px;
+}
+
+
+.bgclr0 {
+	background:url('../../assets/images/activity/violet.png');	
+}
+.bgclr1 
+{
+ 
+ background:url('../../assets/images/activity/indigo.png');	
+}
+.bgclr2 
+{
+background:url('../../assets/images/activity/blue.png');	
+}
+.bgclr3 {
+  background:url('../../assets/images/activity/green.png');	
+}
+.bgclr4 {
+   background:url('../../assets/images/activity/yellow.png');	
+}
+.bgclr5 {
+  background:url('../../assets/images/activity/orange.png');	
+}.bgclr6 
+
+{
+  background:url('../../assets/images/activity/red.png');	
+	
+}
+
+#highlight0_6
+{
+	width: 37px;
+	height: 14px;
+	left: -2px;
+	top: -3px;
+	z-index: 0;
+
+}#highlight0_0
+{
+	width: 35px;
+	height: 14px;
+	left: -3px;
+	top: -3px;
+	z-index: 0;
+
+}#highlight1_3,#highlight1_2,#highlight1_5,#highlight1_4
+{
+	width: 36px;
+	height: 14px;
+	left: -2px;
+	top: -3px;
+	z-index: 0;
+
+}
+.welplantHeight
+	{
+	font-size: 13px;
+	display:none;	
+}
+#welimage0_0,#welimage1_0
+{
+	top:5px;
+	position: absolute;
+	left: 28px;
+}#welimage0_1,#welimage1_1
+{
+	left: 32px;
+	top:5px;
+	height: 70px;
+	width: 76px;
+	position: absolute;
+}
+.days
+{
+    position: absolute;
+	top: 547px;
+	left: 472px;
+	font-size: 14px;	
+	color:#57585B;
+	z-index:1;
+}
+.dummydiv
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:924px;
+	height:588px;
+	z-index:15;
+	display:none;
+}
+.dummyreset
+{
+	position: absolute;
+	left: 769px;
+	top: 140px;
+}
+.dummygrow
+{
+	position: absolute;
+	left: 769px;
+	top: 100px;
+}
+.centerdiv
+{
+	position: absolute;
+	left: 460px;
+	top: 143px;
+	width: 5px;
+	height: 350px;
+	background: #B3B9BE;
+	z-index: 7;
+}
